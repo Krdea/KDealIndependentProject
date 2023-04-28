@@ -1,6 +1,6 @@
 #Lets get even fancier and take a look at the images that our model is classifying. 
 #This will display the images that have been classified as well as the name and confidence score. 
-%matplotlib inline
+#matplotlib inline
 import matplotlib.pyplot as plt
 from tensorflow.keras.preprocessing.image import load_img, img_to_array
 from keras.models import load_model
@@ -10,7 +10,7 @@ import numpy as np
 model = load_model('goodmodel1.h5')
 
 # define a list of image paths
-image_paths = ['/mnt/c/Users/kenda/OneDrive/Desktop/ecol 346/Independent Project/Images/Test/Cancer/Test.png', '/mnt/c/Users/kenda/OneDrive/Desktop/ecol 346/Independent Project/Images/Test/Normal/Test2.png', '/mnt/c/Users/kenda/OneDrive/Desktop/ecol 346/Independent Project/Images/Test/Cancer/Test3.png','/mnt/c/Users/kenda/OneDrive/Desktop/ecol 346/Independent Project/Images/Test/Normal/Test4.png']
+image_paths = ['/home/u26/kendalldeal/KDealIndependentProject/homeworktest/HWtest1.png','/home/u26/kendalldeal/KDealIndependentProject/homeworktest/HWtest2.png','/home/u26/kendalldeal/KDealIndependentProject/homeworktest/HWtest3.png','/home/u26/kendalldeal/KDealIndependentProject/homeworktest/HWtest4.png']
 
 def predict(model, image_paths):
     for i, img_path in enumerate(image_paths):

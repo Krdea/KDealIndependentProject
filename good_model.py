@@ -1,9 +1,9 @@
 import tensorflow as tf
 from tensorflow.keras.preprocessing.image import ImageDataGenerator
 
-train_dir = '/home/u26/kendalldeal/Independent Project/Images/Train'
-validation_dir = '/home/u26/kendalldeal/Independent Project/Images/Valid'
-test_dir = '/home/u26/kendalldeal/Independent Project/Images/Test'
+train_dir = '/home/u26/kendalldeal/KDealIndependentProject/Train'
+validation_dir = '/home/u26/kendalldeal/KDealIndependentProject/Valid'
+test_dir = '/home/u26/kendalldeal/KDealIndependentProject/Test'
 
 train_datagen = ImageDataGenerator(rescale=1./255)
 validation_datagen = ImageDataGenerator(rescale=1./255)
